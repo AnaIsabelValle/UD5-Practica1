@@ -4,8 +4,8 @@ import java.util.Queue;
 
 public class Cajero {
 
-    private int numeroCajero;
-    private Queue<Cliente> colaClientes;
+    private final int numeroCajero;
+    private final Queue<Cliente> colaClientes;
 
     public Cajero(int numeroCajero, Queue<Cliente> colaClientes) {
         this.numeroCajero = numeroCajero;
@@ -34,7 +34,16 @@ public class Cajero {
         for (Cliente cliente : this.colaClientes) {
             System.out.println(cliente.getNombre());
         }
-        System.out.println("===================================");
+        System.out.println(" ===================================");
+    }
 
+    @Override
+    public String toString() {
+        return "Cajero\n" +
+                "===================================\n" +
+                "* Número de caja: " + this.numeroCajero + ":\n" +
+                "* Total de clientes: " + this.colaClientes.size() + "\n" +
+                "* Clientes en la fila:\n" +
+                "===================================\n";
     }
 }
