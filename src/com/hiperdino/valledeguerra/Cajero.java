@@ -1,7 +1,6 @@
 package com.hiperdino.valledeguerra;
 
 import java.util.Queue;
-
 public class Cajero {
 
     private final int numeroCajero;
@@ -10,6 +9,10 @@ public class Cajero {
     public Cajero(int numeroCajero, Queue<Cliente> colaClientes) {
         this.numeroCajero = numeroCajero;
         this.colaClientes = colaClientes;
+    }
+
+    public int getNumeroCajero() {
+        return numeroCajero;
     }
 
     public void añadirCliente(Cliente cliente) {
