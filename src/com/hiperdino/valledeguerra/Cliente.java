@@ -1,5 +1,7 @@
 package com.hiperdino.valledeguerra;
 
+import com.hiperdino.utilidades.GeneradorProductoAleatorio;
+
 import java.util.Stack;
 
 public class Cliente {
@@ -17,10 +19,18 @@ public class Cliente {
         this.nombre = nombre;
         this.cesta = new Stack<>();
         this.totalProductos = numeroProductos;
+        for (int i = 0; i < numeroProductos; i++) {
+            String producto = GeneradorProductoAleatorio.getRandomProductos();
+            this.cesta.add(producto);
+        }
     }
 
     public String getNombre() {
         return nombre;
+    }
+
+    public int getTotalProductos() {
+        return totalProductos;
     }
 
     public void añadirProducto(String producto) {
