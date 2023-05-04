@@ -11,4 +11,17 @@ public class Cajero {
         this.numeroCajero = numeroCajero;
         this.colaClientes = colaClientes;
     }
+
+    public void añadirCliente(Cliente cliente) {
+        this.colaClientes.add(cliente) ;
+    }
+    public void atenderCliente() {
+        if (!colaClientes.isEmpty()) {
+            Cliente cliente = colaClientes.poll();
+            System.out.println("El cajero " + numeroCajero + " está atendiendo al cliente " + cliente.getNombre());
+        } else {
+            System.out.println("La cola de clientes del cajero " + numeroCajero + " está vacía.");
+        }
+    }
+
 }
