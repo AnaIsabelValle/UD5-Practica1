@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class GeneradorProductoAleatorio {
 
-    private static String [] productos ={
+    private static String[] productos = {
             "Papas",
             "Huevos",
             "Agua",
@@ -21,7 +21,7 @@ public class GeneradorProductoAleatorio {
 
     private static Random productoAleatorio = new Random();
 
-    public static String getRandomProductos(){
+    public static String getRandomProductos() {
         int index = productoAleatorio.nextInt(productos.length);
         return productos[index];
     }
