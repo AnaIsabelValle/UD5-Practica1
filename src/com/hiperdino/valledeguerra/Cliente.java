@@ -6,15 +6,17 @@ public class Cliente {
 
     private String nombre;
     private Stack<String> cesta;
+    private int totalProductos;
 
     public Cliente(String nombre, Stack<String> cesta) {
         this.nombre = nombre;
         this.cesta = cesta;
     }
 
-    public Cliente(String nombre) {
+    public Cliente(String nombre, int numeroProductos) {
         this.nombre = nombre;
         this.cesta = new Stack<>();
+        this.totalProductos = numeroProductos;
     }
 
     public String getNombre() {
