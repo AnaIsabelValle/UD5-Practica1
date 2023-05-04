@@ -44,5 +44,20 @@ public class Cliente {
     public int getTotalProductosEnCesta() {
         return cesta.size();
     }
+
+    @Override
+    public String toString() {
+        String cliente = "Cliente\n";
+        cliente += "===================================\n";
+        cliente += "* Nombre: " + this.nombre + ":\n";
+        cliente += "* Total de productos: " + this.totalProductos + "\n";
+        cliente += "* Lista de artículos en la cesta : \n";
+        for (String producto : cesta) {
+            cliente += producto + "\n";
+        }
+        cliente += "===================================\n";
+        return cliente;
+    }
+
 }
 
