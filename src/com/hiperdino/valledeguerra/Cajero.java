@@ -25,4 +25,16 @@ public class Cajero {
         }
     }
 
+    public void listadoClientes() {
+        System.out.println(" Cajero\n");
+        System.out.println(" ===================================");
+        System.out.println(" * Número de caja: " + this.numeroCajero);
+        System.out.println(" * Total de clientes: " + this.colaClientes.size());
+        System.out.println(" * Clientes en la fila: ");
+        for (Cliente cliente : this.colaClientes) {
+            System.out.println(cliente.getNombre());
+        }
+        System.out.println("===================================");
+
+    }
 }
