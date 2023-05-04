@@ -17,6 +17,10 @@ public class Cliente {
         this.cesta = new Stack<>();
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public void añadirProducto(String producto) {
         cesta.add(producto);
     }

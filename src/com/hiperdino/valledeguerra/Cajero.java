@@ -13,8 +13,9 @@ public class Cajero {
     }
 
     public void añadirCliente(Cliente cliente) {
-        this.colaClientes.add(cliente) ;
+        this.colaClientes.add(cliente);
     }
+
     public void atenderCliente() {
         if (!colaClientes.isEmpty()) {
             Cliente cliente = colaClientes.poll();
