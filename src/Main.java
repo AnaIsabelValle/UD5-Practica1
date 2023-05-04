@@ -73,6 +73,7 @@ public class Main {
                     break;
             }
         }
+        teclado.close();
     }
 }
 
