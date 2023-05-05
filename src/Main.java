@@ -26,16 +26,16 @@ public class Main {
 
             switch (opcion) {
                 case "A":
-                    if (cajaAbierta) {
-                        System.out.println("La caja ya estaba abierta.");
+                    if (!cajaAbierta) {
+                        System.out.println("La caja acaba de abrirse.");
                     } else {
                         cajaAbierta = true;
-                        System.out.println("La caja acaba de abrirse.");
+                        System.out.println("La caja ya estaba abierta.");
                     }
                     break;
 
                 case "B":
-                    if (!cajaAbierta) {
+                    if (cajaAbierta) {
                         System.out.println("La caja está cerrada, no se puede añadir clientes");
                     } else {
                         String nuevoCliente = GeneradorNombresAleatorios.getRandomNombre();
