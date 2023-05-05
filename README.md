@@ -8,7 +8,7 @@
   - Email:
     - anaigrosales@gmail.com
   - git:
-    - https://github.com/AnaIsabelValle/UD5-Practica1
+    - <https://github.com/AnaIsabelValle/UD5-Practica1>
     
 ## Introducción:
 
@@ -24,24 +24,30 @@ Se basa en una estructura de datos donde interactuan:
 
 ## Sintaxis:
 1. Creación de paquetes:
-   1. Paquete raíz llamado com, incluye:
-      1. Paquete hiperdino, que se componen de :
-         1. Paquete valledeguerra.
-         2. Paquete utilidades.
+   1. Paquete raíz llamado **com**, incluye:
+      1. Paquete **hiperdino**, que se componen de :
+         1. Paquete **valledeguerra**.
+         2. Paquete **utilidades**.
 2. Creación de clases:
-   1. Dentro del paquete hiperdino, se encuentra la clase ejecutable:
-      1. Main
-   2. Dentro del paquete valleguerra, se han creado las clases:
-         1. Cajero
-         2. Cliente
-   3. Dentro del paquete utilidades, se han creado las clases:
-      1. Generador de Productos Aleatorios
-      2. Generador de Nombres Aleatorios
+   1. Dentro del paquete **hiperdino**, se encuentra la clase ejecutable:
+      1. **Main**
+   2. Dentro del paquete **valleguerra**, se han creado las clases:
+         1. **Cajero**
+         2. **Cliente**
+   3. Dentro del paquete **utilidades**, se han creado las clases:
+      1. **Generador de Productos Aleatorios**
+      2. **Generador de Nombres Aleatorios**
 - Quedando los paquetes y clases de la siguiente manera:
+
 ![img_1.png](img_1.png)
 3. Métodos:
    1. En la clase ejecutable Main:
-      1. Elaboración del Menú 
+      1. Elaboración del Menú, siendo sus funcionnes:
+         1. Abrir caja
+         2. Añadir un nuevo cliente a la cola
+         3. Atender a un cliente
+         4. Ver clientes pendientes
+         5. Cerrar supermercado
    2. En la clase Generador de Productos:
       1. Se implementa un método estático que devuelva un producto aletario
    3. En la clase Generador de Nombres Aleatorios:
