@@ -1,18 +1,18 @@
 package com.hiperdino.valledeguerra;
 
+import java.util.LinkedList;
 import java.util.Queue;
 public class Cajero {
 
     private final int numeroCajero;
     private final Queue<Cliente> colaClientes;
 
-    public Cajero(int numeroCajero, Queue<Cliente> colaClientes) {
-        this.numeroCajero = numeroCajero;
-        this.colaClientes = colaClientes;
-    }
     public Cajero(int numeroCajero) {
         this.numeroCajero = numeroCajero;
+        this.colaClientes = new LinkedList<>();
+
     }
+
     public int getNumeroCajero() {
         return numeroCajero;
     }

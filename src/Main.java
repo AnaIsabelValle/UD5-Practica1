@@ -1,6 +1,5 @@
 import com.hiperdino.utilidades.GeneradorNombresAleatorios;
 import com.hiperdino.valledeguerra.Cajero;
-import com.hiperdino.valledeguerra.Cliente;
 
 import java.util.Scanner;
 
@@ -39,23 +38,18 @@ public class Main {
                     if (!cajaAbierta) {
                         System.out.println("La caja está cerrada, no se puede añadir clientes");
                     } else {
-                        GeneradorNombresAleatorios nuevoCliente = GeneradorNombresAleatorios.getRandomNombre();
-                        cajero.añadirCliente();
+                        String nuevoCliente = GeneradorNombresAleatorios.getRandomNombre();
+                        cajero.añadirCliente(null);
                         System.out.println("Nuevo cliente añadido a la cola: " + nuevoCliente);
                     }
                     break;
+
                 case "C":
-                    Cliente clienteAtendido = cajero.atenderCliente();
-                    if (clienteAtendido == null) {
-                        System.out.println("No hay clientes en la cola.");
-                    } else {
-                        System.out.println("Cliente atendido:\n" + clienteAtendido.toString());
-                    }
+                    cajero.atenderCliente();
                     break;
 
                 case "D":
-                    System.out.println("Clientes en la cola del cajero " + cajero.getNumeroCajero() + ":");
-                    System.out.println(cajero.listadoClientes());
+                    cajero.listadoClientes();
                     break;
 
                 case "E":
