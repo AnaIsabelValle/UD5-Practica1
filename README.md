@@ -39,18 +39,18 @@ Se basa en una estructura de datos donde interactuan:
 ![img_1.png](img_1.png)
 
 3. Métodos:
-   1. En la clase ejecutable Main:
+   1. En la clase ejecutable **Main**:
       1. Elaboración del Menú, siendo sus funcionnes:
          1. Abrir caja
          2. Añadir un nuevo cliente a la cola
          3. Atender a un cliente
          4. Ver clientes pendientes
          5. Cerrar supermercado
-   2. En la clase Generador de Productos:
+   2. En la clase **Generador de Productos**:
       1. Se implementa un método estático que devuelva un producto aletario
-   3. En la clase Generador de Nombres Aleatorios:
+   3. En la clase **Generador de Nombres Aleatorios**:
       1. Se implementa un método estátido que deveulve un nombre aleatorio.
-   4. En la clase Cliente:
+   4. En la clase **Cliente**:
       1. Se implementan:
          1. Atributos
          2. Constructor
@@ -62,7 +62,7 @@ Se basa en una estructura de datos donde interactuan:
             2. Quitar de la cesta
          5. Método de sobreescribir:
             1. toString
-   5. En la clase Cajero:
+   5. En la clase **Cajero**:
       1. Se implementan:
          1. Atributos
          2. Constructor
