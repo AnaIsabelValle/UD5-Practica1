@@ -19,7 +19,7 @@ public class Main {
             System.out.println("C. Atender un cliente");
             System.out.println("D. Ver clientes pendientes");
             System.out.println("E. Cerrar supermercado");
-            System.out.print("Seleccione una opción: ");
+            System.out.println("Seleccione una opción: ");
             System.out.println("******ooOOOOoo******");
 
             String opcion = teclado.nextLine();
@@ -54,7 +54,7 @@ public class Main {
 
                 case "E":
                     if (cajaAbierta) {
-                        cajero.cerrarCaja();
+                        System.out.println("La caja está cerrada");
                         cajaAbierta = false;
                     }
                     System.out.println("¡Hasta pronto!");
