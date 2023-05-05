@@ -10,7 +10,9 @@ public class Cajero {
         this.numeroCajero = numeroCajero;
         this.colaClientes = colaClientes;
     }
-
+    public Cajero(int numeroCajero) {
+        this.numeroCajero = numeroCajero;
+    }
     public int getNumeroCajero() {
         return numeroCajero;
     }

@@ -36,16 +36,14 @@ public class Main {
                     break;
 
                 case "B":
-                    if (cajaAbierta) {
-                        Cliente cliente = new Cliente(GeneradorNombresAleatorios.getRandomNombre(),
-                                GeneradorNombresAleatorios.getRandomNombre());
-                        cajero.añadirCliente(cliente);
-                        System.out.println("Cliente añadido a la cola:\n" + cliente.toString());
+                    if (!cajaAbierta) {
+                        System.out.println("La caja está cerrada, no se puede añadir clientes");
                     } else {
-                        System.out.println("La caja está cerrada. No se puede añadir clientes.");
+                        GeneradorNombresAleatorios nuevoCliente = GeneradorNombresAleatorios.getRandomNombre();
+                        cajero.añadirCliente();
+                        System.out.println("Nuevo cliente añadido a la cola: " + nuevoCliente);
                     }
                     break;
-
                 case "C":
                     Cliente clienteAtendido = cajero.atenderCliente();
                     if (clienteAtendido == null) {
@@ -57,7 +55,7 @@ public class Main {
 
                 case "D":
                     System.out.println("Clientes en la cola del cajero " + cajero.getNumeroCajero() + ":");
-                    System.out.println(cajero.listarClientesEnCola());
+                    System.out.println(cajero.listadoClientes());
                     break;
 
                 case "E":
