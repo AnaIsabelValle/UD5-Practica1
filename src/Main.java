@@ -39,7 +39,7 @@ public class Main {
                     if (cajaAbierta) {
                         Cliente cliente = new Cliente(GeneradorNombresAleatorios.getRandomNombre(),
                                 GeneradorNombresAleatorios.getRandomNombre());
-                        cajero.añadirCliente( cliente);
+                        cajero.añadirCliente(cliente);
                         System.out.println("Cliente añadido a la cola:\n" + cliente.toString());
                     } else {
                         System.out.println("La caja está cerrada. No se puede añadir clientes.");

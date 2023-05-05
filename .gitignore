@@ -1,0 +1,10 @@
+
+# Ignorar el archivo README.md
+README.md
+# Ignorar el directorio llamado .idea
+/.idea
+# Ignorar todos los archivos .log:
+*.log
+# Ignorar todos los archivos en cualquier directorio llamado temp
+temp/
+ 
