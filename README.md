@@ -11,11 +11,8 @@
     - <https://github.com/AnaIsabelValle/UD5-Practica1>
     
 ## Introducción:
-
 ![img.png](img.png)
-
 Nos solicita el grupo Hiperdino que desarrollemos una simulación de uno de sus supermercados.
-
 ## Análisis:
 Se basa en una estructura de datos donde interactuan:
 - Cliente: que dispone de un nombre y una cesta de la compra
@@ -40,6 +37,7 @@ Se basa en una estructura de datos donde interactuan:
 - Quedando los paquetes y clases de la siguiente manera:
 
 ![img_1.png](img_1.png)
+
 3. Métodos:
    1. En la clase ejecutable Main:
       1. Elaboración del Menú, siendo sus funcionnes:
